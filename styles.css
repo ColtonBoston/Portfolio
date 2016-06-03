@@ -1,0 +1,382 @@
+body {
+    font-family: monospace;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.name-container {
+    background: url('images/bg.jpg');
+    height: 400px;
+    text-align: center;
+    position: relative;
+    font-size: 0;
+}
+
+nav {
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+    position: relative;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    text-decoration: bold;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+i {
+    color: white;
+}
+
+p {
+    color: black;
+    width: 50%;
+    margin: 5px auto;
+}
+
+.name {
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 32px;
+    transform: translateY(-50%);
+    width: 50%;
+    position: absolute;
+    border: 7px solid white;
+    padding: 5px 0 5px 0;
+}
+
+.about-container {
+    background: white;
+    padding: 100px 0 100px 0;
+}
+
+#monkey-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    top: 20px;
+}
+
+h1, h2, h3, h6 {
+    margin: 0;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+h2 {
+    color: royalblue;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.media-btn {
+    margin: 0 5px 5px 0;
+    width: 20%;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 2px 5px 2px 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    background-color: royalblue;
+    color: white;
+    border-radius: .25rem;
+}
+
+@media screen and (max-width: 700px){
+    .media-btn {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .media-btn {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .media-btn {
+        width: 80%;
+    }
+}
+
+.media-btn:hover {
+    background-color: blue;
+}
+
+.btn-container {
+    font-size: 0;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 1025px){
+    h1 {
+        font-size: 1.4em;
+    }
+    
+    h6 {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 875px){
+    h1 {
+        font-size: 1em;
+    }
+    
+    h6 {
+        font-size: .4em;
+    }
+}
+
+footer {
+    background: url('images/bg.jpg');
+    padding: 20px 5px 30px 5px;
+    text-align: left;
+    position: relative;
+}
+
+footer nav {
+        float: left;
+        padding: 0;
+    }
+
+body footer h2 {
+    color: white;
+    padding: 0;
+}
+
+.proj-container {
+    background-color: blanchedalmond;
+    margin: 0px auto;
+    padding: 0 20px 0 20px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+div.project-unit {
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-top: 16%;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#simon-img {
+    background: url('https://raw.githubusercontent.com/ColtonBoston/Portfolio/master/images/simon.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tic-tac-toe-img {
+    background: url('images/tic-tac-toe.jpg');
+    //background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clock-img {
+    background: url('images/clock.jpg');
+    //background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#twitch-img {
+    background: url('images/twitch.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wikipedia-img {
+    background: url('images/wikipedia.jpg');
+    //background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#calc-img {
+    background: url('images/calc.jpg');
+    //background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#weather-img {
+    background: url('images/weather.jpg');
+    //background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tribute-img {
+    background: url('images/tribute.jpg');
+    //background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    bottom: null;
+    left: 0px;
+    height: 100%;
+    background: royalblue;
+    opacity: 0.9;
+}
+
+.overlay strong {
+    display: block;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.2;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.project-unit:hover .overlay {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.2;
+    box-shadow: inset 0px 0px 0px 4px blue;
+    top: 0%;
+    right: 0px;
+    bottom: null;
+    left: 0px;
+    font-weight: 700;
+}
+
+.overlay:active, .overlay:focus {
+    text-decoration: none;
+    padding: 0;
+}
+
+.work-section {
+    background: blanchedalmond;
+    overflow-x: hidden;
+    padding: 100px 0 100px 0;
+}
+
+#work-belt {
+    width: 200%;
+    position: relative;
+    left: 0;
+    transition: 150ms;
+}
+
+.proj-wrap, .embed-wrap {
+    width: 50%;
+    float: left;
+}
+
+.embed-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+.embed-container h2 {
+    text-align: center;
+}
+
+.proj-title {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding: 0 0 0 0;
+    text-align: left;
+    color: royalblue;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+#back-arrow {
+    color: royalblue;
+    font-size: 30px;
+    position: absolute;
+    left: -30px;
+    transform: translateY(-2px);
+}
+
+#back-arrow:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.project {
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    div.project-unit {
+        width: 50%;
+        padding-top: 26%;
+    }
+    
+    .name {
+        width: 90%;
+        border: 5px solid white;
+    }
+    
+    p {
+        width: 80%;
+    }
+    
+    #back-arrow {
+        left: 0;
+        text-align: left;
+    }
+    
+    .embed-container h3 {
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .overlay strong {
+        font-size: 18px;
+        padding: 0px 5px;
+    }
+    
+    .embed-container {
+        width: 95%;
+    }
+}
+
+
