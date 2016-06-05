@@ -39,6 +39,8 @@ p {
     color: black;
     width: 50%;
     margin: 5px auto;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
 }
 
 .name {
@@ -194,14 +196,12 @@ div.project-unit {
 
 #tic-tac-toe-img {
     background: url('images/tic-tac-toe.jpg');
-    //background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #clock-img {
     background: url('images/clock.jpg');
-    //background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -214,28 +214,24 @@ div.project-unit {
 
 #wikipedia-img {
     background: url('images/wikipedia.jpg');
-    //background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #calc-img {
     background: url('images/calc.jpg');
-    //background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #weather-img {
     background: url('images/weather.jpg');
-    //background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #tribute-img {
     background: url('images/tribute.jpg');
-    //background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
