@@ -1,7 +1,8 @@
 @import "bourbon/bourbon";
 
 body {
-    font-family: monospace;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     color: white;
     margin: 0;
@@ -156,7 +157,7 @@ div.project-unit {
 }
 
 #simon-img {
-    background: url('images/monkey-05.jpg');
+    background: url('images/simon.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
