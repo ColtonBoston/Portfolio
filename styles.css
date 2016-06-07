@@ -21,10 +21,12 @@ nav {
     font-size: 16px;
 }
 
+.white-text {
+    color: white;
+}
+
 a {
     text-decoration: none;
-    text-decoration: bold;
-    color: white;
 }
 
 a:hover {
@@ -40,7 +42,7 @@ p {
     width: 50%;
     margin: 5px auto;
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .name {
@@ -85,12 +87,13 @@ h2 {
 .media-btn {
     margin: 0 5px 5px 0;
     width: 20%;
+    height: 32px;
     display: inline-block;
     white-space: nowrap;
     padding: 2px 5px 2px 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 32px;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -103,6 +106,10 @@ h2 {
     background-color: royalblue;
     color: white;
     border-radius: .25rem;
+}
+
+.media-btn:hover {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 700px){
@@ -188,8 +195,7 @@ div.project-unit {
 }
 
 #simon-img {
-    background: url('https://raw.githubusercontent.com/ColtonBoston/Portfolio/master/images/simon.jpg');
-    background-position: center center;
+    background: url('images/simon.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
