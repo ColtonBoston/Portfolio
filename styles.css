@@ -73,14 +73,14 @@ h2 {
 
 .media-btn {
   margin: 0 5px 5px 0;
-  width: 20%;
-  height: 30px;
+  width: 22%;
+  height: 32px;
   display: inline-block;
   white-space: nowrap;
-  padding: 6px 5px 2px 5px;
+  padding: 2px 5px 2px 5px;
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 31px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -88,6 +88,7 @@ h2 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  user-select: none;
   border: 1px solid transparent;
   background-color: royalblue;
   color: white;
@@ -96,15 +97,6 @@ h2 {
 .media-btn:hover {
   text-decoration: none; }
 
-@media screen and (max-width: 700px) {
-  .media-btn {
-    width: 22%; } }
-@media screen and (max-width: 600px) {
-  .media-btn {
-    width: 40%; } }
-@media screen and (max-width: 350px) {
-  .media-btn {
-    width: 80%; } }
 .media-btn:hover {
   background-color: blue; }
 
@@ -112,18 +104,6 @@ h2 {
   font-size: 0;
   margin: 10px auto; }
 
-@media screen and (max-width: 1025px) {
-  h1 {
-    font-size: 1.4em; }
-
-  h6 {
-    font-size: .8em; } }
-@media screen and (max-width: 875px) {
-  h1 {
-    font-size: 1em; }
-
-  h6 {
-    font-size: .4em; } }
 footer {
   background: url("images/bg.jpg");
   padding: 20px 5px 30px 5px;
@@ -155,7 +135,8 @@ div.project-unit {
   text-decoration: none; }
 
 #simon-img {
-  background: url("images/simon.jpg");
+  background: url("images/monkey-05.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -232,7 +213,8 @@ div.project-unit {
   font-weight: 700;
   cursor: pointer; }
 
-.overlay:active, .overlay:focus {
+.overlay:active,
+.overlay:focus {
   text-decoration: none;
   padding: 0; }
 
@@ -247,7 +229,8 @@ div.project-unit {
   left: 0;
   transition: 150ms; }
 
-.proj-wrap, .embed-wrap {
+.proj-wrap,
+.embed-wrap {
   width: 50%;
   float: left; }
 
@@ -284,14 +267,16 @@ div.project-unit {
 .project {
   display: none; }
 
+@media screen and (max-width: 1025px) {
+  h1 {
+    font-size: 1.4em; }
+
+  h6 {
+    font-size: .8em; } }
 @media screen and (max-width: 750px) {
   div.project-unit {
     width: 50%;
     padding-top: 26%; }
-
-  .name {
-    width: 60%;
-    border: 5px solid white; }
 
   p {
     width: 90%; }
@@ -303,12 +288,28 @@ div.project-unit {
   .embed-container h3 {
     margin-left: 30px;
     margin-bottom: 20px; } }
+@media screen and (max-width: 875px) {
+  h1 {
+    font-size: 1em; }
+
+  h6 {
+    font-size: .4em; } }
+@media screen and (max-width: 800px) {
+  .media-btn {
+    width: 40%; } }
 @media screen and (max-width: 500px) {
   .overlay strong {
-    font-size: 18px;
     padding: 0px 5px; }
 
   .embed-container {
-    width: 95%; } }
+    width: 95%; }
+
+  div.project-unit {
+    width: 100%;
+    padding-top: 50%;
+    margin-bottom: 5px; }
+
+  .media-btn {
+    width: 80%; } }
 
 /*# sourceMappingURL=styles.css.map */
