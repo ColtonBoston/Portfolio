@@ -10,16 +10,18 @@ $('#back-arrow').click(function () {
 $('.project-unit').click(function () {
     "use strict";
     
-    var project = this.id,
+    var project = this.id.match(/simon|tic-tac-toe|clock|twitch|wikipedia|weather|calc|tribute/).join(),
         title = $(this).children('div').children('strong').html();
         
     $('.proj-title').html(title);
     $('#work-belt').css('left', '-100%');
     console.log(project);
-    if (project.match(/simon/))
-        $('#simon').delay(150).fadeIn();
-    else
-        $('#tictactoe').delay(150).fadeIn();
+    
+    $('#' + project).delay(150).fadeIn();
+    // if (project.match(/simon/))
+    //     $('#simon').delay(150).fadeIn();
+    // else 
+    //     $('#tictactoe').delay(150).fadeIn();
 });
     
 });

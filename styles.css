@@ -28,7 +28,10 @@ a:hover {
   text-decoration: underline; }
 
 i {
-  color: white; }
+  color: white;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  transition-duration: 500ms; }
 
 p {
   color: black;
@@ -92,13 +95,17 @@ h2 {
   border: 1px solid transparent;
   background-color: royalblue;
   color: white;
-  border-radius: .25rem; }
+  border-radius: .25rem;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  transition-duration: 500ms; }
 
-.media-btn:hover {
-  text-decoration: none; }
-
-.media-btn:hover {
-  background-color: blue; }
+.media-btn:hover, .media-btn:hover i {
+  background-color: blue;
+  text-decoration: none;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  transition-duration: 500ms; }
 
 .btn-container {
   font-size: 0;
@@ -183,7 +190,10 @@ div.project-unit {
   left: 0px;
   height: 100%;
   background: royalblue;
-  opacity: 0.9; }
+  opacity: 0.0;
+  -webkit-transition: opacity 0.75s, -webkit-transform 0.75s;
+  -moz-transition: opacity 0.75s, -moz-transform 0.75s;
+  transition: opacity 0.75s, transform 0.75s; }
 
 .overlay strong {
   display: block;
@@ -196,6 +206,10 @@ div.project-unit {
   top: 50%;
   left: 0;
   right: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   position: relative; }
 
@@ -205,13 +219,16 @@ div.project-unit {
   text-decoration: none;
   font-size: 24px;
   line-height: 1.2;
-  box-shadow: inset 0px 0px 0px 4px blue;
   top: 0%;
   right: 0px;
   bottom: null;
   left: 0px;
   font-weight: 700;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.75s;
+  -moz-transition: opacity 0.75s;
+  transition: opacity 0.75s; }
 
 .overlay:active,
 .overlay:focus {

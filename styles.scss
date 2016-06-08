@@ -38,6 +38,7 @@ a:hover {
 
 i {
     color: white;
+    @include transition-duration(500ms);
 }
 
 p {
@@ -106,14 +107,13 @@ h2 {
     background-color: royalblue;
     color: white;
     border-radius: .25rem;
+    @include transition-duration(500ms);
 }
 
-.media-btn:hover {
-    text-decoration: none;
-}
-
-.media-btn:hover {
+.media-btn:hover, .media-btn:hover i{
     background-color: blue;
+    text-decoration: none;
+    @include transition-duration(500ms);
 }
 
 .btn-container {
@@ -213,7 +213,9 @@ div.project-unit {
     left: 0px;
     height: 100%;
     background: royalblue;
-    opacity: 0.9;
+    opacity: 0.0;
+    @include transition(opacity 0.75s, transform 0.75s);
+    
 }
 
 .overlay strong {
@@ -227,7 +229,7 @@ div.project-unit {
     top: 50%;
     left: 0;
     right: 0;
-    transform: translateY(-50%);
+    @include transform(translateY(-50%));
     position: relative;
 }
 
@@ -237,13 +239,14 @@ div.project-unit {
     text-decoration: none;
     font-size: 24px;
     line-height: 1.2;
-    box-shadow: inset 0px 0px 0px 4px blue;
     top: 0%;
     right: 0px;
     bottom: null;
     left: 0px;
     font-weight: 700;
     cursor: pointer;
+    opacity: 0.9;
+    @include transition(opacity 0.75s);
 }
 
 .overlay:active, 
