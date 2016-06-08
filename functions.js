@@ -9,7 +9,11 @@ $('#back-arrow').click(function () {
 
 $('.project-unit').click(function () {
     "use strict";
-    var project = this.id;
+    
+    var project = this.id,
+        title = $(this).children('div').children('strong').html();
+        
+    $('.proj-title').html(title);
     $('#work-belt').css('left', '-100%');
     console.log(project);
     if (project.match(/simon/))
