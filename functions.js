@@ -15,9 +15,9 @@ $('.project-unit').click(function () {
         
     $('.proj-title').html(title);
     $('#work-belt').css('left', '-100%');
-    console.log(project);
     
     $('#' + project).delay(150).fadeIn();
+    
     // if (project.match(/simon/))
     //     $('#simon').delay(150).fadeIn();
     // else 
