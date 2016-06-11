@@ -4,15 +4,27 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  background: black; }
+  background: #0265FF; }
 
 .name-container {
-  background: url("images/bg.jpg");
   height: 400px;
   text-align: center;
   position: relative;
   font-size: 0;
   z-index: 1; }
+
+.bg-img--name-container {
+  background: url("images/shreveport.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  z-index: 0; }
 
 nav {
   padding: 10px 0 0 0;
@@ -33,10 +45,7 @@ a:hover {
   text-decoration: underline; }
 
 i {
-  color: white;
-  -webkit-transition-duration: 500ms;
-  -moz-transition-duration: 500ms;
-  transition-duration: 500ms; }
+  color: white; }
 
 p {
   color: black;
@@ -99,19 +108,13 @@ h2 {
   user-select: none;
   border: 1px solid transparent;
   background-color: #0265FF;
-  color: white;
-  border-radius: .25rem;
-  -webkit-transition-duration: 500ms;
-  -moz-transition-duration: 500ms;
-  transition-duration: 500ms; }
+  color: white; }
 
 .media-btn:hover {
-  background-color: #55ccff;
+  background: white;
   color: #0265FF;
-  text-decoration: none;
-  -webkit-transition-duration: 500ms;
-  -moz-transition-duration: 500ms;
-  transition-duration: 500ms; }
+  box-shadow: 0 0 5px 4px #0265FF;
+  text-decoration: none; }
 
 .media-btn:hover i {
   color: #0265FF; }
@@ -121,7 +124,7 @@ h2 {
   margin: 20px auto; }
 
 footer {
-  background: url("images/bg.jpg");
+  background: url("images/shreveport.png");
   padding: 20px 5px 30px 5px;
   text-align: left;
   position: relative; }
@@ -233,6 +236,9 @@ div.project-unit {
   -moz-transition: opacity 0.5s;
   transition: opacity 0.5s; }
 
+.project-unit:hover .overlay strong {
+  opacity: 1; }
+
 .overlay:active,
 .overlay:focus {
   text-decoration: none;
@@ -290,7 +296,64 @@ div.project-unit {
 .contact-section {
   background: white;
   padding: 100px 0;
-  height: 400px; }
+  height: 400px;
+  text-align: center; }
+
+.contact-form {
+  width: 50%;
+  margin: 0 auto; }
+
+.contact-form-input {
+  font-size: 16px;
+  display: block;
+  float: left;
+  margin: 0 0 5px 0;
+  width: 49%;
+  box-sizing: border-box;
+  border: 2px solid #0265FF;
+  padding: 4px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.contact-form-input:first-of-type {
+  margin-right: 2%; }
+
+.contact-form-textarea {
+  font-size: 16px;
+  padding: 4px;
+  display: inline-block;
+  height: 200px;
+  margin: 20px auto 5px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #0265FF;
+  resize: none; }
+
+.contact-form-p {
+  font-size: 14px;
+  float: left;
+  text-align: left;
+  margin: 0;
+  max-width: 60%; }
+
+.contact-form-input:focus, .contact-form-textarea:focus {
+  box-shadow: 0 0 5px 1px #0265FF; }
+
+.contact-form-submit {
+  background: #0265FF;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  float: right;
+  line-height: 100%;
+  padding: 4px 8px; }
+
+.contact-form-submit:hover {
+  color: #0265FF;
+  background: white;
+  box-shadow: 0 0 5px 4px #0265FF; }
 
 @media screen and (max-width: 1025px) {
   h1 {
@@ -298,6 +361,18 @@ div.project-unit {
 
   h6 {
     font-size: .8em; } }
+@media screen and (max-width: 875px) {
+  h1 {
+    font-size: 1em; }
+
+  h6 {
+    font-size: .4em; }
+
+  .contact-form {
+    width: 65%; } }
+@media screen and (max-width: 800px) {
+  .media-btn {
+    width: 40%; } }
 @media screen and (max-width: 750px) {
   div.project-unit {
     width: 50%;
@@ -312,16 +387,10 @@ div.project-unit {
 
   .embed-container h3 {
     margin-left: 30px;
-    margin-bottom: 20px; } }
-@media screen and (max-width: 875px) {
-  h1 {
-    font-size: 1em; }
+    margin-bottom: 20px; }
 
-  h6 {
-    font-size: .4em; } }
-@media screen and (max-width: 800px) {
-  .media-btn {
-    width: 40%; } }
+  .contact-form {
+    width: 75%; } }
 @media screen and (max-width: 500px) {
   .overlay strong {
     padding: 0px 5px; }
@@ -335,6 +404,9 @@ div.project-unit {
     margin-bottom: 5px; }
 
   .media-btn {
+    width: 80%; }
+
+  .contact-form {
     width: 80%; } }
 
 /*# sourceMappingURL=styles.css.map */

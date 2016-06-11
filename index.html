@@ -17,7 +17,7 @@
     <body>
         <a id='home'></a>
         <div class='name-container'>
-            <!--<div class='bg-img--name-container'></div>-->
+            <div class='bg-img--name-container'></div>
             <nav>
                 <a class='white-text' href='#home'>Home</a>
                 <a class='white-text' href='#about'>About</a>
@@ -144,11 +144,14 @@
     <section class='contact-section'>
         <h2>Contact Me</h2>
 
-        <form action="https://formspree.io/colton@coltonboston.com" method="POST">
-            <input type="text" name="name">
-            <input type="email" name="_replyto">
-            <input type="submit" value="Send">
+        <form class="contact-form" action="https://formspree.io/colton@coltonboston.com" method="POST">
+            <input class="contact-form-input" type="text" name="name" placeholder="Name...">
+            <input class="contact-form-input" type="email" name="_replyto" placeholder="Email...">
+            <textarea class="contact-form-textarea" name="body" placeholder="Message..."></textarea>
+            <input class="contact-form-submit" type="submit" value="Send">
+            <p class="contact-form-p">Form handled by <a href="https://formspree.io/" target="_blank">Formspree</a></p>
         </form>
+        
 
     </section>
     <footer><a id='contact'></a>
