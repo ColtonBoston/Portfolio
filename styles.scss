@@ -345,12 +345,16 @@ div.project-unit {
 }
 
 .contact-form {
+    @include appearance(none);
+    border-radius: 0;
     width: 50%;
     margin: 0 auto;
 }
 
 
 .contact-form-input {
+    @include appearance(none);
+    border-radius: 0;
     font-size: 16px;
     display: block;
     float: left;
@@ -367,6 +371,8 @@ div.project-unit {
 }
 
 .contact-form-textarea {
+    @include appearance(none);
+    border-radius: 0;
     font-size: 16px;
     padding: 4px;
     display: inline-block;

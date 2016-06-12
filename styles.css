@@ -304,10 +304,22 @@ div.project-unit {
   text-align: center; }
 
 .contact-form {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 0;
   width: 50%;
   margin: 0 auto; }
 
 .contact-form-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 0;
   font-size: 16px;
   display: block;
   float: left;
@@ -322,6 +334,12 @@ div.project-unit {
   margin-right: 2%; }
 
 .contact-form-textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 0;
   font-size: 16px;
   padding: 4px;
   display: inline-block;
