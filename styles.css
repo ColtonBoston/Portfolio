@@ -351,6 +351,7 @@ div.project-unit {
   background: #0265FF;
   color: white;
   border: none;
+  border-radius: 0;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
