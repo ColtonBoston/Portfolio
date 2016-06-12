@@ -343,6 +343,11 @@ div.project-unit {
   box-shadow: 0 0 5px 1px #0265FF; }
 
 .contact-form-submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   background: #0265FF;
   color: white;
   border: none;

@@ -391,6 +391,7 @@ div.project-unit {
 }
 
 .contact-form-submit {
+    @include appearance(none);
     background: $primaryColor;
     color: white;
     border: none;
