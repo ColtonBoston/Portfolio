@@ -205,10 +205,7 @@ div.project-unit {
   width: 100%;
   height: 100%;
   background: #0265FF;
-  opacity: 0.0;
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.75s;
-  -moz-transition: opacity 0.5s, -moz-transform 0.75s;
-  transition: opacity 0.5s, transform 0.75s; }
+  opacity: 0.0; }
 
 .overlay strong {
   display: block;
@@ -235,10 +232,7 @@ div.project-unit {
   line-height: 1.2;
   font-weight: 700;
   cursor: pointer;
-  opacity: 0.9;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  transition: opacity 0.5s; }
+  opacity: 0.9; }
 
 .project-unit:hover .overlay strong {
   opacity: 1; }
@@ -296,6 +290,9 @@ div.project-unit {
 
 .project {
   display: none; }
+
+.embed-proj-full {
+  margin: 0; }
 
 .contact-section {
   background: white;
@@ -380,6 +377,7 @@ div.project-unit {
 
 .contact-form-submit:hover {
   color: #0265FF;
+  cursor: pointer;
   background: white;
   box-shadow: 0 0 5px 4px #0265FF; }
 
