@@ -47,7 +47,7 @@ a:hover {
 i {
   color: white; }
 
-p {
+about-p {
   color: black;
   width: 50%;
   margin: 5px auto;
@@ -292,7 +292,16 @@ div.project-unit {
   display: none; }
 
 .embed-proj-full {
-  margin: 0; }
+  margin: 0 auto;
+  text-align: left;
+  color: black; }
+
+.embed-proj-langs {
+  margin: 5px auto;
+  text-align: left;
+  font-weight: bold;
+  color: #0265FF;
+  font-size: 18px; }
 
 .contact-section {
   background: white;
@@ -349,6 +358,7 @@ div.project-unit {
 
 .contact-form-p {
   font-size: 14px;
+  color: black;
   float: left;
   text-align: left;
   margin: 0;
