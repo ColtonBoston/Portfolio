@@ -1,15 +1,16 @@
-body {
+body, html {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   color: white;
   margin: 0;
   padding: 0;
+  height: 100%;
   background: #0265FF; }
 
 .name-container {
-  height: 400px;
+  height: 100%;
+  width: 100%;
   text-align: center;
-  position: relative;
   font-size: 0;
   z-index: 1; }
 
@@ -18,21 +19,26 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.7;
+  opacity: 0.8;
   width: 100%;
   height: 100%;
   z-index: 0; }
 
-nav {
+.nav--name-section {
   padding: 10px 0 0 0;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
   font-size: 15px;
   text-transform: uppercase;
-  word-spacing: 5px; }
+  word-spacing: 5px;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .white-text {
   color: white; }
@@ -72,6 +78,7 @@ about-p {
 
 .about-container {
   background: white;
+  position: relative;
   padding: 100px 0 100px 0; }
 
 #monkey-img {
@@ -141,8 +148,12 @@ body footer h2 {
   color: white;
   padding: 0; }
 
+.work-section {
+  background: blanchedalmond;
+  overflow-x: hidden;
+  padding: 100px 0 100px 0; }
+
 .proj-container {
-  background-color: blanchedalmond;
   margin: 0px auto;
   padding: 0 20px 0 20px;
   max-width: 100%;
@@ -199,12 +210,12 @@ div.project-unit {
   background-size: cover; }
 
 .overlay {
+  background: #0265FF;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #0265FF;
   opacity: 0.0; }
 
 .overlay strong {
@@ -241,11 +252,6 @@ div.project-unit {
 .overlay:focus {
   text-decoration: none;
   padding: 0; }
-
-.work-section {
-  background: blanchedalmond;
-  overflow-x: hidden;
-  padding: 100px 0 100px 0; }
 
 #work-belt {
   width: 200%;
