@@ -1,0 +1,208 @@
+.work-section {
+    background: $darkGrey;
+    overflow-x: hidden;
+    padding: 100px 0 100px 0;
+    position: relative;
+
+    a,
+    a:visited,
+    a:focus,
+    a:active {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $secondaryColor;
+      text-decoration: none;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+}
+
+#projects {
+  position: absolute;
+  top: 1px;
+}
+
+.proj-container {
+    margin: 0px auto;
+    padding: 20px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.project-unit {
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-top: 15%;
+    text-decoration: none;
+    z-index: 0;
+    background-size: 100%;
+    background-position: center top;
+    @include transition(background-size 250ms ease);
+}
+
+.project-unit:hover{
+  box-shadow: 0 0 7px 9px $secondaryColor;
+  z-index: 1;
+  background-size: 110%;
+  @include transition(box-shadow 250ms ease, background-size 1s ease);
+}
+
+#simon-img {
+    background-image: url('../images/simon.jpg');
+    background-position: center center;
+}
+
+#tic-tac-toe-img {
+    background-image: url('../images/tic-tac-toe.jpg');
+}
+
+#clock-img {
+    background-image: url('../images/clock.jpg');
+}
+
+#twitch-img {
+    background-image: url('../images/twitch.jpg');
+}
+
+#wikipedia-img {
+    background-image: url('../images/wikipedia.jpg');
+}
+
+#calc-img {
+    background-image: url('../images/calc.jpg');
+    background-position: center 63%;
+}
+
+#weather-img {
+    background-image: url('../images/weather.jpg');
+}
+
+#tribute-img {
+    background-image: url('../images/tribute.jpg');
+}
+
+.overlay {
+    background: $primaryColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.0;
+    z-index: 1;
+    @include transition-duration(250ms);
+}
+
+.overlay strong {
+    display: block;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.2;
+    top: 50%;
+    left: 0;
+    right: 0;
+    @include transform(translateY(-50%));
+    position: relative;
+}
+
+.project-unit:hover .overlay {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 0.9;
+    @include transition-duration(250ms);
+}
+
+.project-unit:hover .overlay strong {
+    opacity: 1;
+}
+
+.overlay:active,
+.overlay:focus {
+    text-decoration: none;
+    padding: 0;
+}
+
+#work-belt {
+    width: 200%;
+    position: relative;
+    left: 0;
+    transition: 150ms;
+}
+
+.proj-wrap,
+.embed-wrap {
+    width: 50%;
+    float: left;
+}
+
+.embed-wrap {
+  float: right;
+}
+
+.embed-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: left;
+    position: relative;
+}
+
+.embed-container h2 {
+    text-align: center;
+}
+
+.proj-title {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding: 0 0 0 0;
+    text-align: left;
+    color: $primaryColor;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+#back-arrow {
+    color: $primaryColor;
+    font-size: 30px;
+    position: absolute;
+    left: -30px;
+    transform: translateY(-2px);
+}
+
+#back-arrow:hover {
+    color: $secondaryColor;
+    cursor: pointer;
+}
+
+.project {
+    display: none;
+}
+
+.embed-proj-full {
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+}
+
+.embed-proj-langs {
+    margin: 10px auto;
+    text-align: left;
+    font-weight: bold;
+    color: $primaryColor;
+    font-size: 18px;
+}

@@ -1,0 +1,86 @@
+.about-container {
+    background: white;
+    position: relative;
+    padding: 100px 0 100px 0;
+
+    p {
+      color: black;
+      margin: 20px auto;
+      width: 80%;
+      font-size: 18px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: left;
+
+      a,
+      a:visited,
+      a:focus,
+      a:active {
+        color: $primaryColor;
+      }
+
+      a:hover {
+        color: $secondaryColor;
+      }
+
+    }
+
+    strong {
+      font-size: 24px;
+    }
+}
+
+#about {
+  position: absolute;
+  top: 0;
+}
+
+#self-img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    font-size: 0;
+    margin: 0 auto 50px auto;
+}
+
+.media-btn {
+    margin: 0 5px 0 20px;
+    width: calc(20% - 25px);
+    height: 32px;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 6px 5px 2px 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    @include user-select(none);
+    background-color: $primaryColor;
+    color: white;
+    //@include transition-duration(250ms);
+}
+
+.media-btn:hover{
+    background: white;
+    color: $primaryColor;
+    box-shadow: 0 0 5px 4px $primaryColor;
+    text-decoration: none;
+    //@include transition-duration(250ms);
+}
+
+i {
+    color: white;
+    //@include transition-duration(250ms);
+}
+
+.media-btn:hover i {
+    color: $primaryColor;
+    //@include transition-duration(250ms);
+}
