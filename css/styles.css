@@ -154,14 +154,14 @@ i {
   z-index: 0;
   background-size: 100%;
   background-position: center top;
-  -webkit-transition: background-size 250ms ease;
-  -moz-transition: background-size 250ms ease;
-  transition: background-size 250ms ease; }
+  -webkit-transition: background-size 250ms ease-out;
+  -moz-transition: background-size 250ms ease-out;
+  transition: background-size 250ms ease-out; }
 
 .project-unit:hover {
   box-shadow: 0 0 7px 9px #55ccff;
   z-index: 1;
-  background-size: 110%;
+  background-size: 105%;
   -webkit-transition: box-shadow 250ms ease, background-size 1s ease;
   -moz-transition: box-shadow 250ms ease, background-size 1s ease;
   transition: box-shadow 250ms ease, background-size 1s ease; }
