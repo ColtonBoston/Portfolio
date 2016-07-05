@@ -20,6 +20,7 @@
     h2 {
       margin-bottom: 20px;
     }
+
 }
 
 #projects {
@@ -44,47 +45,47 @@
     z-index: 0;
     background-size: 100%;
     background-position: center top;
-    @include transition(background-size 250ms ease-out);
+    @include transition(background-size 250ms);
 }
 
 .project-unit:hover{
   box-shadow: 0 0 7px 9px $secondaryColor;
   z-index: 1;
-  background-size: 105%;
-  @include transition(box-shadow 250ms ease, background-size 1s ease);
+  //background-size: 105%;
+  @include transition(box-shadow 250ms, background-size 1s);
 }
 
-#simon-img {
+.simon-img {
     background-image: url('../images/simon.jpg');
     background-position: center center;
 }
 
-#tic-tac-toe-img {
+.tic-tac-toe-img {
     background-image: url('../images/tic-tac-toe.jpg');
 }
 
-#clock-img {
+.clock-img {
     background-image: url('../images/clock.jpg');
 }
 
-#twitch-img {
+.twitch-img {
     background-image: url('../images/twitch.jpg');
 }
 
-#wikipedia-img {
+.wikipedia-img {
     background-image: url('../images/wikipedia.jpg');
 }
 
-#calc-img {
+.calc-img {
     background-image: url('../images/calc.jpg');
     background-position: center 63%;
 }
 
-#weather-img {
+.weather-img {
     background-image: url('../images/weather.jpg');
 }
 
-#tribute-img {
+.tribute-img {
     background-image: url('../images/tribute.jpg');
 }
 
@@ -136,7 +137,7 @@
     padding: 0;
 }
 
-#work-belt {
+.work-belt {
     width: 200%;
     position: relative;
     left: 0;
@@ -176,7 +177,7 @@
     line-height: 26px;
 }
 
-#back-arrow {
+.back-arrow {
     color: $primaryColor;
     font-size: 30px;
     position: absolute;
@@ -184,7 +185,7 @@
     transform: translateY(-2px);
 }
 
-#back-arrow:hover {
+.back-arrow:hover {
     color: $secondaryColor;
     cursor: pointer;
 }
@@ -194,7 +195,7 @@
 }
 
 .embed-proj-full {
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     text-align: left;
     color: white;
 }

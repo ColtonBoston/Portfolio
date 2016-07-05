@@ -1,6 +1,3 @@
-/*global $, jQuery, alert */
-$(document).ready(function () {
-
 // Function from http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 $('a').click(function(event){
   // Make sure this.hash has a value before overriding default behavior
@@ -23,9 +20,9 @@ $('a').click(function(event){
     } // End if
 });
 
-$('#back-arrow').click(function () {
+$('.back-arrow').click(function () {
     "use strict";
-    $('#work-belt').css('left', '0');
+    $('.work-belt').css('left', '0');
     $('.project').fadeOut();
     $('.project-unit').show();
 });
@@ -33,17 +30,16 @@ $('#back-arrow').click(function () {
 $('.project-unit').click(function () {
     "use strict";
 
-    var project = this.id.match(/simon|tic-tac-toe|clock|twitch|wikipedia|weather|calc|tribute/).join(),
+    var project = this.className.match(/simon|tic-tac-toe|clock|twitch|wikipedia|weather|calc|tribute/).join(),
         title = $(this).children('div').children('strong').html();
 
         $('html, body').animate({
             scrollTop: $('#projects').offset().top
           }, 800);
+
     $('.project-unit').delay(150).fadeOut();
     $('.proj-title').html(title);
-    $('#work-belt').css('left', '-100%');
+    $('.work-belt').css('left', '-100%');
 
-    $('#' + project).delay(150).fadeIn();
-});
-
+    $('.' + project).delay(150).fadeIn();
 });
