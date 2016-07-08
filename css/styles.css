@@ -17,7 +17,6 @@
 .name-section {
   color: white;
   background: url("../images/shreveport.jpg");
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -137,7 +136,7 @@ i {
 
 #projects {
   position: absolute;
-  top: 1px; }
+  top: 90px; }
 
 .proj-container {
   margin: 0px auto;
@@ -266,6 +265,9 @@ i {
 
 .embed-container h2 {
   text-align: center; }
+
+iframe {
+  height: 450px; }
 
 .proj-title {
   text-transform: uppercase;
