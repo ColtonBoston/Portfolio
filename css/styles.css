@@ -17,6 +17,7 @@
 .name-section {
   color: white;
   background: url("../images/shreveport.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -38,7 +39,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
   word-spacing: 5px;
   z-index: 1;
@@ -57,7 +58,6 @@
     margin: 20px auto;
     width: 80%;
     font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left; }
     .about-container p a,
     .about-container p a:visited,
@@ -82,11 +82,11 @@
 
 .btn-container {
   font-size: 0;
-  margin: 0 auto 30px auto; }
+  margin: 0 auto 30px auto;
+  width: 80%; }
 
 .media-btn {
-  margin: 0 5px 0 20px;
-  width: calc(20% - 25px);
+  width: calc(25% - 16px);
   height: 32px;
   display: inline-block;
   white-space: nowrap;
@@ -110,6 +110,11 @@
   color: #0265FF;
   box-shadow: 0 0 5px 4px #0265FF;
   text-decoration: none; }
+
+.linkedin-btn,
+.github-btn,
+.freecodecamp-btn {
+  margin-right: 8px; }
 
 i {
   color: white; }
@@ -140,7 +145,7 @@ i {
 
 .proj-container {
   margin: 0px auto;
-  padding: 20px;
+  padding: 20px 60px;
   max-width: 100%;
   overflow: auto; }
 
@@ -266,9 +271,6 @@ i {
 .embed-container h2 {
   text-align: center; }
 
-iframe {
-  height: 450px; }
-
 .proj-title {
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -361,7 +363,7 @@ iframe {
   padding: 4px;
   display: inline-block;
   height: 200px;
-  margin: 20px auto 5px;
+  margin: 2% auto 5px;
   width: 100%;
   box-sizing: border-box;
   border: 2px solid #0265FF;
@@ -409,7 +411,8 @@ footer {
   position: relative; }
 
 footer nav {
-  padding: 0; }
+  padding: 0;
+  word-spacing: 2px; }
 
 body footer h2 {
   color: white;
@@ -447,9 +450,15 @@ h2 {
   font-size: 28px;
   margin-bottom: 30px; }
 
-@media screen and (max-width: 1025px) {
-  h1 {
-    font-size: 1.6em; } }
+@media screen and (max-width: 950px) {
+  .github-btn {
+    margin: 0 0 8px 0; }
+
+  .linkedin-btn {
+    margin-bottom: 8px; }
+
+  .media-btn {
+    width: calc(50% - 14px); } }
 @media screen and (max-width: 875px) {
   h1 {
     font-size: 1.4em; }
@@ -457,18 +466,24 @@ h2 {
   h6 {
     font-size: .6em; }
 
+  div.project-unit {
+    width: 50%;
+    padding-top: 26%; }
+
   .contact-form {
     width: 65%; } }
-@media screen and (max-width: 800px) {
-  .media-btn {
-    width: 40%; } }
 @media screen and (max-width: 750px) {
   h1 {
     font-size: 1.2em; }
 
-  div.project-unit {
-    width: 50%;
-    padding-top: 26%; }
+  .name-section {
+    background-attachment: local; }
+
+  .name {
+    border: 5px solid white; }
+
+  .overlay strong {
+    font-size: 20px; }
 
   .back-arrow {
     left: 0;
@@ -479,6 +494,14 @@ h2 {
 
   .contact-form {
     width: 75%; } }
+@media screen and (max-width: 650px) {
+  footer {
+    text-align: center; }
+
+  .footer-email {
+    position: relative;
+    top: 0;
+    right: 0; } }
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 1em; }
@@ -486,33 +509,51 @@ h2 {
   h6 {
     font-size: 0.5em; }
 
-  .name {
-    border: 5px solid white; }
+  .self-img {
+    height: 150px;
+    width: 150px; }
 
-  .nav--name-section {
-    word-spacing: 3px; }
+  .media-btn {
+    width: 100%;
+    margin-right: 0; }
+
+  .freecodecamp-btn {
+    margin-bottom: 8px; }
 
   .overlay strong {
     padding: 0px 5px; }
 
   .embed-container {
-    width: 95%; }
+    width: 90%; }
 
   div.project-unit {
     width: 100%;
     padding-top: 50%;
-    margin-bottom: 5px; }
-
-  .media-btn {
-    width: 80%; }
+    margin: 0 auto 5px auto; }
 
   .contact-form {
-    width: 80%; } }
+    width: 80%; }
+
+  .contact-form-input {
+    width: 100%; }
+
+  .contact-form-textarea {
+    margin-top: 0; } }
 @media screen and (max-width: 400px) {
   h1 {
     font-size: 0.8em; }
 
   h6 {
-    font-size: 0.4em; } }
+    font-size: 0.4em; }
+
+  .nav--name-section {
+    font-size: 14px;
+    word-spacing: 2px; }
+
+  .proj-container {
+    padding: 20px 40px; }
+
+  body footer h2 {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -13,9 +13,8 @@
 
 .name-section {
     color: white;
-    //background: url('images/shreveport.png');
     background: url('../images/shreveport.jpg');
-    //background-attachment: fixed;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -25,7 +24,6 @@
     font-size: 0;
 }
 
-// Background with opacity
 .bg-overlay--name-section {
     background: $primaryColor;
     opacity: 0.2;
@@ -40,7 +38,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     word-spacing: 5px;
     z-index: 1;
