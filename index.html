@@ -17,11 +17,11 @@
         <section class='name-section'>
             <div class='bg-overlay--name-section'></div>
             <nav class='nav--name-section'>
-                <!--<a href='#home'>Home</a>-->
+                <a href='#home'>Home</a>
                 <a href='#about'>About</a>
                 <a href='#projects'>Projects</a>
                 <a href='#contact'>Contact</a>
-                <a href='pdf/ColtonBoston_Resume.pdf' target='_blank'>Resume</a>
+                <!-- <a href='pdf/ColtonBoston_Resume.pdf' target='_blank'>Resume</a> -->
             </nav>
             <div class='name'>
               <h1>Colton Boston</h1>
@@ -29,7 +29,7 @@
             </div>
         </section>
 
-        <div class='about-container'><a id='about'></a>
+        <section class='about-section'><a id='about'></a>
           <h2>About Me</h2>
           <img class='self-img' src='images/2handsome.jpg' alt='Me'/>
           <div class='btn-container'>
@@ -41,7 +41,7 @@
           <p><strong>Hello! My name is Colton Boston. I'm a front-end developer in Shreveport, LA who enjoys creating fast, functional and responsive websites.</strong></p>
           <p>I have a B.S. in Computer Science from <a href='http://www.lsus.edu' target='_blank'>Louisiana State University Shreveport</a>. Also, I recently earned a <a href='https://www.freecodecamp.com/coltonboston/front-end-certification' target='_blank'>front-end web development certification</a> from <a href='https://www.freecodecamp.com' target='_blank'>Free Code Camp</a>, where I'm currently working on data visualization. I really had fun designing and coding all of the projects to complete the certification, and I learned a lot from them. You can view some of them below, while the rest can be found on my CodePen profile.</p>
           <p>In my free time you can find me playing guitar or video games, watching American Ninja Warrior and mixed martial arts, or chilling out with my dog, Zoe.</p>
-        </div>
+        </section>
 
     <section class='work-section'><a id='projects'></a>
             <h2>Projects</h2>
@@ -49,43 +49,51 @@
             <div class='proj-wrap'>
                 <div class='proj-container'>
 
-                  <div class='project-unit simon-img'>
+                  <div class='project-unit'>
+                      <div class='project-thumb-container'><div class='project-thumb simon-img'></div></div>
                       <div class='overlay'>
                           <strong>Simon Game</strong>
                       </div>
                   </div>
-                  <div class='project-unit tic-tac-toe-img'>
+                  <div class='project-unit'>
+                    <div class='project-thumb-container'><div class='project-thumb tic-tac-toe-img'></div></div>
                       <div class='overlay'>
                           <strong>Tic Tac Toe</strong>
                       </div>
                   </div>
-                  <div class='project-unit clock-img'>
+                  <div class='project-unit'>
+                    <div class='project-thumb-container'><div class='project-thumb clock-img'></div></div>
                       <div class='overlay'>
                           <strong>Pomodoro Clock</strong>
                       </div>
                   </div>
-                  <div class='project-unit twitch-img'>
+                  <div class='project-unit'>
+                    <div class='project-thumb-container'><div class='project-thumb twitch-img'></div></div>
                       <div class='overlay'>
                           <strong>Twitch.tv JSON API</strong>
                       </div>
                   </div>
-                  <div class='project-unit wikipedia-img'>
+                  <div class='project-unit'>
+                    <div class='project-thumb-container'><div class='project-thumb wikipedia-img'></div></div>
                       <div class='overlay'>
                           <strong>Wikipedia Viewer</strong>
                       </div>
                   </div>
-                  <div class='project-unit weather-img'>
+                  <div class='project-unit'>
+                    <div class='project-thumb-container'><div class='project-thumb weather-img'></div></div>
                       <div class='overlay'>
                           <strong>Local Weather App</strong>
                       </div>
                   </div>
-                  <div class='project-unit calc-img'>
+                  <div class='project-unit'>
+                    <div class='project-thumb-container'><div class='project-thumb calc-img'></div></div>
                       <div class='overlay'>
                           <strong>JavaScript Calculator</strong>
                       </div>
                   </div>
 
-                  <div class='project-unit tribute-img'>
+                  <div class='project-unit'>
+                    <div class='project-thumb-container'><div class='project-thumb tribute-img'></div></div>
                       <div class='overlay'>
                           <strong>Tribute Page</strong>
                       </div>
@@ -114,6 +122,7 @@
                       <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
                       <p class='embed-proj-langs'>HTML - CSS - JavaScript/jQuery</p>
+                      <p class='embed-proj-full'>A simple game of Tic Tac Toe where the computer cannot lose.</p>
                       <p class='embed-proj-full'>View the full version of this project <a href='http://codepen.io/ColtonBoston/full/xVNyVw/' target='_blank'>here</a>.</p>
                     </div>
 
@@ -123,6 +132,7 @@
                       <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
                       <p class='embed-proj-langs'>HTML - CSS - JavaScript/jQuery</p>
+                      <p class='embed-proj-full'>A Pomodoro Clock for timing work and breaks.</p>
                       <p class='embed-proj-full'>View the full version of this project <a href='http://codepen.io/ColtonBoston/full/YwagRO/' target='_blank'>here</a>.</p>
                     </div>
 
@@ -132,6 +142,7 @@
                       <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
                       <p class='embed-proj-langs'>HTML - CSS - JavaScript/jQuery/JSON</p>
+                      <p class='embed-proj-full'>Loads an array of Twitch.tv users using the Twitch JSON API and displays information and online status for each user.</p>
                       <p class='embed-proj-full'>View the full version of this project <a href='http://codepen.io/ColtonBoston/full/wGEzQg/' target='_blank'>here</a>.</p>
                     </div>
 
@@ -141,6 +152,7 @@
                       <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
                       <p class='embed-proj-langs'>HTML - CSS - JavaScript/jQuery/JSON</p>
+                      <p class='embed-proj-full'>Search a term and get the top Wikipedia pages for that term using the Wikipedia JSON API.</p>
                       <p class='embed-proj-full'>View the full version of this project <a href='http://codepen.io/ColtonBoston/full/xVgWEa/' target='_blank'>here</a>.</p>
                     </div>
 
@@ -150,6 +162,7 @@
                       <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
                       <p class='embed-proj-langs'>HTML - CSS - JavaScript/jQuery/JSON</p>
+                      <p class='embed-proj-full'>An app that uses the OpenWeather API to get the current location and weather of the user.</p>
                       <p class='embed-proj-full'>View the full version of this project <a href='http://codepen.io/ColtonBoston/full/wGBzxm/' target='_blank'>here</a>.</p>
                     </div>
 
@@ -159,15 +172,17 @@
                       <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
                       <p class='embed-proj-langs'>HTML - CSS - JavaScript/jQuery</p>
+                      <p class='embed-proj-full'>A simple calculator made with JavaScript and jQuery.</p>
                       <p class='embed-proj-full'>View the full version of this project <a href='http://codepen.io/ColtonBoston/full/RrZQPE/' target='_blank'>here</a>.</p>
                     </div>
 
                     <div class='project tribute'>
 
-                      <p data-theme-id="0" data-slug-hash="MKdmJG" data-default-tab="result" data-user="ColtonBoston" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/ColtonBoston/pen/MKdmJG/">Tribute Page</a> by Colton (<a href="http://codepen.io/ColtonBoston">@ColtonBoston</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <p data-height="450" data-theme-id="0" data-slug-hash="MKdmJG" data-default-tab="result" data-user="ColtonBoston" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/ColtonBoston/pen/MKdmJG/">Tribute Page</a> by Colton (<a href="http://codepen.io/ColtonBoston">@ColtonBoston</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                       <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
                       <p class='embed-proj-langs'>HTML - CSS/Bootstrap</p>
+                      <p class='embed-proj-full'>A tribute page dedicated to Steve Irwin.</p>
                       <p class='embed-proj-full'>View the full version of this project <a href='http://codepen.io/ColtonBoston/full/MKdmJG/' target='_blank'>here</a>.</p>
                     </div>
                 </div>
@@ -192,10 +207,11 @@
         <h2>Colton Boston</h2>
         <h2 class='footer-email'>colton@coltonboston.com</h2>
         <nav>
-            <a class='white-text' href='#home'>Home</a>
-            <a class='white-text' href='#about'>About</a>
-            <a class='white-text' href='#projects'>Projects</a>
-            <a href='pdf/ColtonBoston_Resume.pdf' target='_blank'>Resume</a>
+            <a href='#home'>Home</a>
+            <a href='#about'>About</a>
+            <a href='#projects'>Projects</a>
+            <a href='#contact'>Contact</a>
+            <!-- <a href='pdf/ColtonBoston_Resume.pdf' target='_blank'>Resume</a> -->
         </nav>
     </footer>
 

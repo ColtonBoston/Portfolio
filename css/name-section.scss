@@ -1,3 +1,17 @@
+.name-section {
+    color: white;
+    background: url('../images/shreveport.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+
 .name {
     margin: 0 auto;
     top: 50%;
@@ -9,19 +23,6 @@
     position: absolute;
     border: 7px solid white;
     padding: 20px;
-}
-
-.name-section {
-    color: white;
-    background: url('../images/shreveport.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-size: 0;
 }
 
 .bg-overlay--name-section {
@@ -37,10 +38,8 @@
     margin: 0 auto;
     position: absolute;
     top: 0;
-    left: 50%;
     font-size: 16px;
     text-transform: uppercase;
     word-spacing: 5px;
-    z-index: 1;
-    @include transform(translateX(-50%));
+    //z-index: 1;
 }

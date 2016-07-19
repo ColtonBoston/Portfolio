@@ -30,12 +30,15 @@ $('.back-arrow').click(function () {
 $('.project-unit').click(function () {
     "use strict";
 
-    var project = this.className.match(/simon|tic-tac-toe|clock|twitch|wikipedia|weather|calc|tribute/).join(),
-        title = $(this).children('div').children('strong').html();
+    // var project = $(this).children('div.project-thumb-container').children('div.project-thumb').className.match(/simon|tic-tac-toe|clock|twitch|wikipedia|weather|calc|tribute/).join(),
+    //     title = $(this).parent.children('.overlay').children('strong').html();
 
-        $('html, body').animate({
-            scrollTop: $('#projects').offset().top
-          }, 800);
+    var project = $(this).children('div.project-thumb-container').children('div.project-thumb')[0].className.match(/simon|tic-tac-toe|clock|twitch|wikipedia|weather|calc|tribute/).join(),
+    title = $(this).children('div.overlay').children('strong').html();
+    
+    $('html, body').animate({
+        scrollTop: $('#projects').offset().top
+    }, 800);
 
     $('.project-unit').delay(150).fadeOut();
     $('.proj-title').html(title);
