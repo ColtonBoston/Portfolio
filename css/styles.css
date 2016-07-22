@@ -72,7 +72,8 @@
   height: 175px;
   border-radius: 50%;
   display: inline-block;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  transition-duration: 2s; }
 
 .btn-container {
   font-size: 0;
