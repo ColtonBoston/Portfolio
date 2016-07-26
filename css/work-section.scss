@@ -52,9 +52,9 @@
 //   //@include transition(box-shadow 250ms);
 // }
 
-// This container was used for keeping the thumbnail from overflowing and still being able to have a box-shadow on the overlay.
+// This container was used for keeping the thumbnail from overflowing and while still being able to have a box-shadow on the overlay.
 // Overflow: hidden is now on .project-unit
-// If switching back to use this, make sure to put z-index: 0 on .project-unit to fix weird clipping on bottom on projects on hover in chrome.
+// If switching back to use this, make sure to put z-index: 0 on .project-unit to fix weird clipping on bottom of projects on hover in chrome.
 .project-thumb-container {
   //overflow: hidden;
   width: 100%;

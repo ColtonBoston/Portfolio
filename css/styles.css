@@ -46,11 +46,10 @@
 .about-section {
   background: white;
   position: relative;
-  padding: 100px 0 100px 0; }
+  padding: 100px 10%; }
   .about-section p {
     color: black;
     margin: 20px auto;
-    width: 80%;
     font-size: 18px;
     text-align: left; }
     .about-section p a,
@@ -72,13 +71,11 @@
   height: 175px;
   border-radius: 50%;
   display: inline-block;
-  margin-bottom: 30px;
-  transition-duration: 2s; }
+  margin-bottom: 30px; }
 
 .btn-container {
   font-size: 0;
-  margin: 0 auto 30px auto;
-  width: 80%; }
+  margin: 0 auto 30px auto; }
 
 .media-btn {
   width: calc(25% - 16px);
@@ -318,8 +315,8 @@ i {
 .contact-section {
   background: white;
   padding: 100px 0;
-  height: 400px;
-  text-align: center; }
+  text-align: center;
+  overflow-y: hidden; }
   .contact-section a,
   .contact-section a:visited,
   .contact-section a:focus,
