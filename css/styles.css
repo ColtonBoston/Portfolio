@@ -1,3 +1,14 @@
+.nav--name-section {
+  width: 100%;
+  padding: 10px 0 0 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  z-index: 1; }
+
 .name-section {
   color: white;
   background: url("../images/shreveport.jpg");
