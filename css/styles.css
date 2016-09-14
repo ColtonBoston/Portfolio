@@ -433,20 +433,17 @@ footer {
   text-align: left;
   position: relative; }
 
-footer nav {
-  padding: 0;
-  word-spacing: 2px; }
-
-body footer h2 {
-  color: white;
-  padding: 0;
-  margin-bottom: 10px; }
-
 .footer-email {
   color: #0265FF;
   position: absolute;
-  top: 100px;
-  right: 20px; }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0; }
 
 body, html {
   font-family: Arial, sans-serif;
@@ -518,14 +515,6 @@ h2 {
 
   .contact-form {
     width: 75%; } }
-@media screen and (max-width: 650px) {
-  footer {
-    text-align: center; }
-
-  .footer-email {
-    position: relative;
-    top: 0;
-    right: 0; } }
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 1em; }
