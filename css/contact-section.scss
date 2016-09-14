@@ -3,6 +3,7 @@
     padding: 100px 0;
     text-align: center;
     overflow-y: hidden;
+    position: relative;
 
     a,
     a:visited,
@@ -16,6 +17,11 @@
       color: $secondaryColor;
       text-decoration: none;
     }
+}
+
+#contact {
+  position: absolute;
+  top: 50px;
 }
 
 .contact-form {

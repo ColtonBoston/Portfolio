@@ -1,11 +1,29 @@
 .nav--name-section {
-    width: 100%;
-    padding: 10px 0 0 0;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    font-size: 16px;
-    text-transform: uppercase;
-    word-spacing: 5px;
-    z-index: 1;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  z-index: 1;
+}
+
+@keyframes nav-animate {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.nav-fixed {
+  animation: nav-animate 350ms;
+  position: fixed;
+  background-color: $darkGrey;
+  z-index: 1;
+  border-bottom: 1px solid $secondaryColor;
 }

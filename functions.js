@@ -1,3 +1,29 @@
+// Fixed Header on scroll
+var hasScrolled = false,
+    nav = document.querySelector('nav'),
+    header_height = getComputedStyle(nav).height.split('px')[0];
+
+window.onscroll = scrolled;
+
+function scrolled(){
+  hasScrolled = true;
+}
+
+setInterval(function(){
+    if (hasScrolled){
+      hasScrolled = false;
+
+      if (window.pageYOffset > header_height){
+        nav.classList.add('nav-fixed');
+      }
+      else {
+        nav.classList.remove('nav-fixed');
+      }
+    }
+}, 100);
+
+
+
 // Function from http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 $('a').click(function(event){
   // Make sure this.hash has a value before overriding default behavior
@@ -35,7 +61,7 @@ $('.project-unit').click(function () {
 
     var project = $(this).children('div.project-thumb-container').children('div.project-thumb')[0].className.match(/simon|tic-tac-toe|clock|twitch|wikipedia|weather|calc|tribute/).join(),
     title = $(this).children('div.overlay').children('strong').html();
-    
+
     $('html, body').animate({
         scrollTop: $('#projects').offset().top
     }, 800);
