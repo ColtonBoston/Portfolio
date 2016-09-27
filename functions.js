@@ -1,29 +1,5 @@
-// Fixed Header on scroll
-var hasScrolled = false,
-    nav = document.querySelector('nav'),
-    header_height = getComputedStyle(nav).height.split('px')[0];
 
-window.onscroll = scrolled;
-
-function scrolled(){
-  hasScrolled = true;
-}
-
-setInterval(function(){
-    if (hasScrolled){
-      hasScrolled = false;
-
-      if (window.pageYOffset > header_height){
-        nav.classList.add('nav-fixed');
-      }
-      else {
-        nav.classList.remove('nav-fixed');
-      }
-    }
-}, 100);
-
-
-
+// Smooth scroll for anchors
 // Function from http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 $('a').click(function(event){
   // Make sure this.hash has a value before overriding default behavior
@@ -72,3 +48,40 @@ $('.project-unit').click(function () {
 
     $('.' + project).delay(150).fadeIn();
 });
+
+$('.nav-toggle').on('click', function(){
+  $('.nav--ul').toggleClass('visible');
+  $('.media-list').toggleClass('visible');
+  $('.nav-toggle').toggleClass('fa-bars fa-close');
+});
+
+$('.nav--ul').on('click', function(){
+  $('.nav--ul').removeClass('visible');
+  $('.media-list').removeClass('visible');
+  $('.nav-toggle').toggleClass('fa-bars fa-close');
+});
+
+// Fixed Header on scroll
+//
+// var hasScrolled = false,
+//     nav = document.querySelector('nav'),
+//     header_height = getComputedStyle(nav).height.split('px')[0];
+//
+// window.onscroll = scrolled;
+//
+// function scrolled(){
+//   hasScrolled = true;
+// }
+//
+// setInterval(function(){
+//     if (hasScrolled){
+//       hasScrolled = false;
+//
+//       if (window.pageYOffset > header_height){
+//         nav.classList.add('nav-fixed');
+//       }
+//       else {
+//         nav.classList.remove('nav-fixed');
+//       }
+//     }
+// }, 100);

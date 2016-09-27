@@ -38,34 +38,34 @@
     height: 175px;
     border-radius: 50%;
     display: inline-block;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
 }
 
-.btn-container {
-    font-size: 0;
-    margin: 0 auto 30px auto;
-    //width: 80%;
-}
+// .btn-container {
+//     font-size: 0;
+//     margin: 0 auto 30px auto;
+//     //width: 80%;
+// }
 
-.media-btn {
-    //margin: 0 5px 0 20px;
-    width: calc(25% - 16px);
-    height: 32px;
-    display: inline-block;
-    white-space: nowrap;
-    padding: 6px 5px 2px 5px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 31px;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    @include user-select(none);
-    background-color: $primaryColor;
-    color: white;
-    //@include transition-duration(250ms);
-}
+// .media-btn {
+//     //margin: 0 5px 0 20px;
+//     width: calc(25% - 16px);
+//     height: 32px;
+//     display: inline-block;
+//     white-space: nowrap;
+//     padding: 6px 5px 2px 5px;
+//     font-size: 1.2rem;
+//     font-weight: 400;
+//     line-height: 31px;
+//     text-align: center;
+//     white-space: nowrap;
+//     vertical-align: middle;
+//     cursor: pointer;
+//     @include user-select(none);
+//     background-color: $primaryColor;
+//     color: white;
+//     //@include transition-duration(250ms);
+// }
 
 .media-btn:hover{
     background: white;
@@ -79,14 +79,4 @@
 .github-btn,
 .freecodecamp-btn {
   margin-right: 8px;
-}
-
-i {
-    color: white;
-    //@include transition-duration(250ms);
-}
-
-.media-btn:hover i {
-    color: $primaryColor;
-    //@include transition-duration(250ms);
 }
