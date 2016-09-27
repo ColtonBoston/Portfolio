@@ -13,14 +13,24 @@
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
-  -webkit-animation: nav-animate 500ms forwards 2.4s;
-  -moz-animation: nav-animate 500ms forwards 2.4s;
-  animation: nav-animate 500ms forwards 2.4s;
+  -webkit-animation: dropDown 500ms forwards 2.4s;
+  -moz-animation: dropDown 500ms forwards 2.4s;
+  animation: dropDown 500ms forwards 2.4s;
   position: fixed;
   background-color: #0265FF;
   z-index: 1; }
 
-@keyframes nav-animate {
+@-webkit-keyframes dropDown {
+  0% {
+    -webkit-transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0%); } }
+@-moz-keyframes dropDown {
+  0% {
+    -moz-transform: translateY(-100%); }
+  100% {
+    -moz-transform: translateY(0%); } }
+@keyframes dropDown {
   0% {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -66,6 +76,16 @@
     color: white;
     animation: scaleUp 400ms; }
 
+@-webkit-keyframes scaleUp {
+  0%, 100% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); } }
+@-moz-keyframes scaleUp {
+  0%, 100% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); } }
 @keyframes scaleUp {
   0%, 100% {
     transform: scale(1); }
@@ -120,6 +140,16 @@
   width: 100%;
   text-align: center; }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -150,6 +180,16 @@
     -moz-animation: fadeIn 0.8s forwards 1.7s;
     animation: fadeIn 0.8s forwards 1.7s; }
 
+@-webkit-keyframes fadeInOverlay {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.2; } }
+@-moz-keyframes fadeInOverlay {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.2; } }
 @keyframes fadeInOverlay {
   0% {
     opacity: 0; }
