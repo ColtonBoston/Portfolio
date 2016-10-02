@@ -1,9 +1,19 @@
 @media (max-width: 875px){
 
-  div.project-unit {
-      width: 50%;
+  .project-unit {
+      width: 48%;
       padding-top: 26%;
       //overflow: hidden;
+
+      &:nth-child(2),
+      &:nth-child(5),
+      &:nth-child(8) {
+        margin: 0 0 40px 0;
+      }
+
+      &:nth-child(odd){
+        margin: 0 4% 40px 0;
+      }
   }
 
   .contact-form {
@@ -109,11 +119,14 @@
     width: 90%;
   }
 
-  div.project-unit {
+  .project-unit {
     width: 100%;
     padding-top: 70%;
-    margin: 0 auto 20px auto;
-    box-shadow: 0 0 7px 5px black;
+
+    &:nth-child(odd){
+      margin-right: 0;
+    }
+
   }
 
   .contact-form {
