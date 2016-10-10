@@ -59,7 +59,7 @@
   padding: 0 12px;
   box-sizing: border-box;
   height: 40px;
-  line-height: 40px;
+  line-height: 42px;
   display: block;
   outline: none;
   -webkit-transition: background-color 100ms linear;
@@ -122,7 +122,7 @@
   position: absolute;
   top: 0;
   height: 40px;
-  line-height: 40px;
+  line-height: 42px;
   right: 15px;
   font-size: 30px; }
   .nav-toggle:hover {
@@ -334,6 +334,10 @@
 .simon-img {
   background-image: url("../images/simon.jpg");
   background-position: center center; }
+
+.markdown-previewer-img {
+  background-image: url("../images/markdown-previewer.jpg");
+  background-position: left center; }
 
 .tic-tac-toe-img {
   background-image: url("../images/tic-tac-toe.jpg"); }
@@ -570,7 +574,8 @@ footer {
   background: #1A242E;
   padding: 100px 20px 20px 20px;
   text-align: left;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .footer-email {
   color: #0265FF;
