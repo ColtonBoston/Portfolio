@@ -37,7 +37,7 @@ $('.project-unit').click(function () {
 
     var project = $(this).children('div.project-thumb-container')
                   .children('div.project-thumb')[0]
-                  .className.match(/recipe-box|simon|markdown-previewer|tic-tac-toe|clock|twitch|wikipedia|weather|calc|tribute/)
+                  .className.match(/recipe-box|simon|camper-leaderboard|markdown-previewer|tic-tac-toe|clock|twitch|wikipedia|weather|calc|tribute/)
                   .join(),
         title = $(this).children('div.overlay').children('strong').html();
 
