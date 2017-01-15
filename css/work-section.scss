@@ -83,9 +83,23 @@
   @include transition(transform 75ms);
 }
 
+.react-label {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  right: 0;
+  bottom: 0;
+  font-size: 24px;
+}
+
 .project-unit:hover .project-thumb {
   @include transform(scale(1.15) rotate(0.1deg));
   @include transition(transform 250ms ease-in-out);
+}
+
+.recipe-box-img {
+  background-image: url('../images/recipe-box.JPG');
 }
 
 .simon-img {

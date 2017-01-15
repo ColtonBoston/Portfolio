@@ -320,6 +320,15 @@
   -moz-transition: -moz-transform 75ms;
   transition: transform 75ms; }
 
+.react-label {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  right: 0;
+  bottom: 0;
+  font-size: 24px; }
+
 .project-unit:hover .project-thumb {
   -webkit-transform: scale(1.15) rotate(0.1deg);
   -moz-transform: scale(1.15) rotate(0.1deg);
@@ -329,6 +338,9 @@
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   -moz-transition: -moz-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out; }
+
+.recipe-box-img {
+  background-image: url("../images/recipe-box.JPG"); }
 
 .simon-img {
   background-image: url("../images/simon.jpg");
