@@ -610,6 +610,9 @@ footer {
     .project-unit:nth-child(odd) {
       margin: 0 4% 40px 0; }
 
+  .about-section {
+    padding: 100px 12%; }
+
   .contact-form {
     width: 65%; } }
 @media (max-width: 750px) {
@@ -627,10 +630,7 @@ footer {
     margin-left: 30px; }
 
   .contact-form {
-    width: 75%; }
-
-  .react-label {
-    font-size: 20px; } }
+    width: 75%; } }
 @media (max-width: 600px) {
   .name h1 {
     font-size: 3em; }
@@ -672,8 +672,11 @@ footer {
   .nav-toggle {
     visibility: visible; }
 
+  .about-section {
+    padding: 100px 8%; }
+
   .overlay strong {
-    font-size: 18px; }
+    font-size: 24px; }
 
   .react-label {
     font-size: 16px; } }
@@ -693,9 +696,6 @@ footer {
     padding-top: 70%; }
     .project-unit:nth-child(odd) {
       margin-right: 0; }
-
-  .overlay strong {
-    font-size: 22px; }
 
   .contact-form {
     width: 80%; }

@@ -16,6 +16,10 @@
       }
   }
 
+  .about-section {
+    padding: 100px 12%;
+  }
+
   .contact-form {
       width: 65%;
   }
@@ -42,10 +46,6 @@
 
   .contact-form {
     width: 75%;
-  }
-
-  .react-label {
-    font-size: 20px;
   }
 }
 
@@ -78,7 +78,6 @@
   }
 
   .nav--ul {
-
     visibility: hidden;
     border-top: 1px solid black;
     background-color: $primaryColor;
@@ -108,10 +107,14 @@
     visibility: visible;
   }
 
-  .overlay strong {
-    font-size: 18px;
+  .about-section {
+    padding: 100px 8%;
   }
-  
+
+  .overlay strong {
+    font-size: 24px;
+  }
+
   .react-label {
     font-size: 16px;
   }
@@ -139,10 +142,6 @@
       margin-right: 0;
     }
 
-  }
-
-  .overlay strong {
-    font-size: 22px;
   }
 
   .contact-form {
