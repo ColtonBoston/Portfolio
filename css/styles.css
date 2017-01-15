@@ -383,6 +383,8 @@
   width: 100%;
   height: 100%;
   opacity: 0.0;
+  box-sizing: border-box;
+  padding: 0 5px;
   -webkit-transition: opacity 75ms;
   -moz-transition: opacity 75ms;
   transition: opacity 75ms; }
@@ -407,9 +409,6 @@
 .project-unit:hover .overlay {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 24px;
-  line-height: 1.2;
-  font-weight: 700;
   cursor: pointer;
   opacity: 0.9;
   -webkit-transition: opacity 250ms;
@@ -628,7 +627,10 @@ footer {
     margin-left: 30px; }
 
   .contact-form {
-    width: 75%; } }
+    width: 75%; }
+
+  .react-label {
+    font-size: 20px; } }
 @media (max-width: 600px) {
   .name h1 {
     font-size: 3em; }
@@ -668,7 +670,13 @@ footer {
       padding: 0 20px; }
 
   .nav-toggle {
-    visibility: visible; } }
+    visibility: visible; }
+
+  .overlay strong {
+    font-size: 18px; }
+
+  .react-label {
+    font-size: 16px; } }
 @media (max-width: 500px) {
   .self-img {
     height: 150px;
@@ -685,6 +693,9 @@ footer {
     padding-top: 70%; }
     .project-unit:nth-child(odd) {
       margin-right: 0; }
+
+  .overlay strong {
+    font-size: 22px; }
 
   .contact-form {
     width: 80%; }
