@@ -66,6 +66,9 @@
   -moz-transition: background-color 100ms linear;
   transition: background-color 100ms linear; }
 
+.nav-active {
+  background-color: #1A242E !important; }
+
 .home-link-container {
   text-align: left; }
 
@@ -275,7 +278,7 @@
   .work-section h2 {
     margin-bottom: 20px; }
 
-#projects {
+#work {
   position: absolute;
   top: 50px; }
 

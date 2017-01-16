@@ -42,7 +42,7 @@ $('.project-unit').click(function () {
         title = $(this).children('div.overlay').children('strong').html();
 
     $('html, body').animate({
-        scrollTop: $('#projects').offset().top
+        scrollTop: $('#work').offset().top
     }, 800);
 
     $('.project-unit').delay(150).fadeOut();
@@ -63,6 +63,25 @@ $('.nav--ul').on('click', function(){
   $('.media-list').removeClass('visible');
   $('.nav-toggle').toggleClass('fa-bars fa-close');
 });
+
+var sections = $('section');
+console.log(sections);
+setInterval(function(){
+
+  var scrollPosition = $(window).scrollTop();
+  sections.each(function(){
+    var currentSection = $(this);
+    var sectionTop = currentSection.offset().top,
+        id = currentSection.children()[0].id;
+    if (scrollPosition + 200 >= sectionTop){
+      var link = $('a[href=#' + id + ']');
+      if (!link.hasClass('nav-active')){
+        $('a').removeClass('nav-active');
+        $('a[href=#' + id + ']').addClass('nav-active');
+      }
+    }
+  });
+}, 500);
 
 // Fixed Header on scroll
 //
