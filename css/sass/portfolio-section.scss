@@ -1,0 +1,78 @@
+.section-portfolio {
+  background-color: #fff;
+  color: $black;
+  min-height: 100%;
+}
+.section-portfolio-padded {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-content {
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: relative;
+  text-align: left;
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .btn:hover {
+    text-decoration: none;
+  }
+}
+.project {
+  width: 100%;
+}
+.project-left {
+  width: 47%;
+  float: left;
+  margin-right: 6%;
+
+  @media (max-width: 650px){
+    width: 100%;
+    float: none;
+  }
+}
+.project-right {
+  width: 47%;
+  float: left;
+  position: relative;
+
+  @media (max-width: 650px){
+    width: 100%;
+    float: none;
+    padding-bottom: 70%;
+    margin: 10% 0;
+  }
+}
+.project-img {
+  position: absolute;
+  transform: rotateY(-30deg) rotateX(5deg);
+  transform-origin: left bottom;
+  box-shadow: 1px 0px 0 #fff,0 0 30px rgba(0,95,99,0.2);
+  display: block;
+}
+.project-img:first-of-type {
+  width: 95%;
+  left: 10%;
+}
+.project-img:nth-child(2) {
+  left: 33%;
+  z-index: 3;
+  margin-top: 30%;
+  width: 20%;
+}
+.project-img:nth-child(3) {
+  width: 40%;
+  margin-top: 10%;
+  z-index: 2;
+}
+.tech-container {
+  margin-top: 30px;
+}
+.smaller-projects {
+  width: 100%;
+  clear: both;
+}
