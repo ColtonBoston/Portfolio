@@ -39,6 +39,8 @@
   width: 47%;
   float: left;
   position: relative;
+  perspective: 1000px;
+  padding-bottom: 35%;
 
   @media (max-width: 650px){
     width: 100%;
@@ -49,9 +51,13 @@
 }
 .project-img {
   position: absolute;
-  transform: rotateY(-30deg) rotateX(5deg);
+  -webkit-transform: rotateY(-30deg) rotateX(5deg);
+  -ms-transform: rotateY(-30deg) rotateX(5deg);
+  transform: rotateY(-15deg) rotateX(5deg);
   transform-origin: left bottom;
-  box-shadow: 1px 0px 0 #fff,0 0 30px rgba(0,95,99,0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border: 2px solid $black;
   display: block;
 }
 .project-img:first-of-type {
@@ -59,15 +65,15 @@
   left: 10%;
 }
 .project-img:nth-child(2) {
-  left: 33%;
-  z-index: 3;
-  margin-top: 30%;
-  width: 20%;
-}
-.project-img:nth-child(3) {
   width: 40%;
   margin-top: 10%;
   z-index: 2;
+}
+.project-img:nth-child(3) {
+  left: 33%;
+  z-index: 3;
+  margin-top: 27%;
+  width: 20%;
 }
 .tech-container {
   margin-top: 30px;
