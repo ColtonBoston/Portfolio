@@ -5,6 +5,8 @@ var tl = new TimelineLite()
     scroll = new SmoothScroll('a[href*="#"]');
 
 // GSAP
+
+
 window.onload = function() {
   var delay = 0.2;
   tl.to(".section-name", 0.5, {opacity: 1}, 0)
@@ -18,8 +20,9 @@ window.onload = function() {
     .from(".name-content .btn", 0.3, {y: 50, x: 20}, "second+=" + (delay+=0.3))
     .to(".name-content .btn", 0.3, {opacity: 1}, "second+=" + delay)
     .from(".header-main", 0.3, {x: "-100%"}, "second+=" + delay)
-    .to(".header-main", 0.1, {opacity: 1}, "second+=" + delay);
+    .to(".header-main", 0.3, {opacity: 1}, "second+=" + delay);
 }
+
 // End - GSAP
 
 // ScrollMagic
@@ -36,6 +39,18 @@ window.onload = function() {
 //
 // controller.addScene(scene);
 // End - ScrollMagic
+
+// Prevent mobile browsers from changing height of header when navbar causes window height to change
+if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i) ) {
+   var header = document.querySelector(".header-main");
+   header.style.height = window.innerHeight + "px";
+ }
 
 // Header toggle for smaller devices
 var headerToggle = document.querySelector("#header-toggle"),
@@ -84,15 +99,15 @@ function addContactFormListener(control){
   var label = document.querySelector("label[for='#" + control.id + "']");
   // Initialize label location (for when page is refreshed with input already in a form-control)
   if (control.value !== ""){
-    label.style.transform = "translateY(0)";
+    label.style.transform = "translateY(15px)";
   }
   control.addEventListener("focus", function(e){
-    label.style.transform = "translateY(0)";
+    label.style.transform = "translateY(15px)";
     label.style.color = "#e61924";
   });
   control.addEventListener("blur", function(e){
     if (control.value === "") {
-      label.style.transform = "translateY(40px)";
+      label.style.transform = "translateY(46px)";
     }
     label.style.color = "#242424";
   });
