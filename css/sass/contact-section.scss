@@ -19,6 +19,7 @@
   margin-bottom: 100px;
 }
 .contact-form-input, .contact-form-textarea {
+  font-size: 16px;
   background-color: transparent;
   color: inherit;
   border: none;
@@ -43,7 +44,6 @@
   width: auto;
   transition: all 250ms;
   margin: 10px 0 5px 0;
-  font-weight: bold;
   font-size: 1.5em;
 }
 .contact-form .btn {
