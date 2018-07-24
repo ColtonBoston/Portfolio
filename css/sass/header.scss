@@ -15,10 +15,12 @@
 
   @media (max-width: 800px){
     width: 0;
-    background: linear-gradient(to bottom, rgba($primaryColor, 0.9), rgba(#b61924, 0.9));
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba($primaryColor, 0.95), rgba($primaryColor, 0.75));
     overflow: hidden;
     box-shadow: none;
     justify-content: center;
+    transition: opacity 300ms linear;
   }
 }
 .header-main h1 {
@@ -37,6 +39,7 @@
 
   @media (max-width: 800px){
     height: auto;
+    text-align: center;
   }
 }
 .header-bottom {
@@ -71,7 +74,7 @@
   @media (max-width: 800px){
     display: inline-block;
     position: fixed;
-    right: 10px;
+    right: 15px;
     font-size: 2em;
     color: $primaryColor;
     z-index: 10;
@@ -86,4 +89,5 @@
 }
 .header-visible {
   width: 100%;
+  opacity: 1;
 }
