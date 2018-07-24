@@ -5,8 +5,6 @@ var tl = new TimelineLite()
     scroll = new SmoothScroll('a[href*="#"]');
 
 // GSAP
-
-
 window.onload = function() {
   var delay = 0.2;
   tl.to(".section-name", 0.5, {opacity: 1}, 0)
@@ -22,7 +20,6 @@ window.onload = function() {
     .from(".header-main", 0.3, {x: "-100%"}, "second+=" + delay)
     .to(".header-main", 0.3, {opacity: 1}, "second+=" + delay);
 }
-
 // End - GSAP
 
 // ScrollMagic
@@ -48,7 +45,6 @@ if( navigator.userAgent.match(/Android/i)
  || navigator.userAgent.match(/iPod/i)
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i) ) {
-   var header = document.querySelector(".header-main");
    header.style.height = window.innerHeight + "px";
  }
 
@@ -57,7 +53,6 @@ var headerToggle = document.querySelector("#header-toggle"),
     isHeaderVisible = false;
 headerToggle.addEventListener("click", function(e){
   this.classList.toggle("header-toggle-close");
-  this.innerHTML = isHeaderVisible ? "<i class='fas fa-bars'></i>" : "<i class='fas fa-times'></i>";
   header.classList.toggle("header-visible");
   isHeaderVisible = !isHeaderVisible;
 });
@@ -66,7 +61,6 @@ var localNavLinks = document.querySelectorAll("header a"),
 for (var i = 0; i < numNavLinks; i++){
   localNavLinks[i].addEventListener("click", function(e){
     header.classList.remove("header-visible");
-    headerToggle.innerHTML = "<i class='fas fa-bars'></i>";
     headerToggle.classList.remove("header-toggle-close");
     isHeaderVisible = false;
   });
