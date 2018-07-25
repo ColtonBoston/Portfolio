@@ -45,7 +45,7 @@ if( navigator.userAgent.match(/Android/i)
  || navigator.userAgent.match(/iPod/i)
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i) ) {
-   header.style.height = window.innerHeight + "px";
+   header.style.height = window.innerHeight * 1.3 + "px";
  }
 
 // Header toggle for smaller devices

@@ -19,7 +19,7 @@
     background: linear-gradient(to bottom, rgba($primaryColor, 0.95), rgba($primaryColor, 0.75));
     overflow: hidden;
     box-shadow: none;
-    justify-content: center;
+    justify-content: flex-start;
     transition: opacity 300ms linear;
   }
 }
