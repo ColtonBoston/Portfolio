@@ -1,7 +1,7 @@
 var tl = new TimelineLite()
     controller = new ScrollMagic.Controller(),
     header = document.querySelector(".header-main"),
-    nameSection = document.querySelector(".name-content")
+    nameSection = document.querySelector(".section-name"),
     scroll = new SmoothScroll('a[href*="#"]');
 
 // GSAP
@@ -37,7 +37,7 @@ window.onload = function() {
 // controller.addScene(scene);
 // End - ScrollMagic
 
-// Prevent mobile browsers from changing height of header when navbar causes window height to change
+// Prevent mobile browsers from changing height of header/section-name when navbar causes window height to change
 if( navigator.userAgent.match(/Android/i)
  || navigator.userAgent.match(/webOS/i)
  || navigator.userAgent.match(/iPhone/i)
@@ -46,7 +46,9 @@ if( navigator.userAgent.match(/Android/i)
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i) ) {
    header.style.height = window.innerHeight * 1.3 + "px";
+   nameSection.style.height = window.innerHeight + "px";
  }
+
 
 // Header toggle for smaller devices
 var headerToggle = document.querySelector("#header-toggle"),
