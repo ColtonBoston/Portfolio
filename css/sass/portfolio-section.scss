@@ -57,7 +57,7 @@
   transform-origin: left bottom;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  border: 2px solid $black;
+  border: 1px solid $black;
 
   @media (max-width: 650px){
     -webkit-transform: none;
