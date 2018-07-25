@@ -134,7 +134,7 @@ a {
   font-weight: bold; }
   @media (max-width: 800px) {
     .local-nav-link, .social-nav-link {
-      font-size: 2em; } }
+      font-size: 1.4em; } }
 
 .local-nav-link:hover, .social-nav-link:hover {
   background-color: gold;
